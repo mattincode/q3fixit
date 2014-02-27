@@ -59,7 +59,7 @@ namespace sickhouse.q3fixit.Utils
             {
                 var config = File.ReadAllLines(_q3ConfigPath).ToList();
                 // Modify
-                SetValue(config, "seta r_customheigh", screenResolution.Vertical.ToString());
+                SetValue(config, "seta r_customheight", screenResolution.Vertical.ToString());
                 SetValue(config, "seta r_customwidth", screenResolution.Horizontal.ToString());
                // SetValue(config, "seta r_customaspect", "1");
                 SetValue(config, "seta r_mode", "-1");
@@ -171,11 +171,6 @@ namespace sickhouse.q3fixit.Utils
                 // File already opened, notify the user
                 //DialogService.ShowDialog(UIResources.Resources.ImportAirportRequirement_Dialog_FileConflict, UIResources.Resources.ImportAirportRequirement_Dialog_FileOpenedMessage, false, b => { });
             }
-            //seta name "Titte"
-            //            seta team_headmodel "titte"
-            //seta team_model "titte"
-            //seta headmodel "joensson"
-            //seta model "joensson"
         }
 
 
@@ -184,6 +179,8 @@ namespace sickhouse.q3fixit.Utils
             var lineIndex = config.FindIndex(x => x.StartsWith(key));
             if (lineIndex != -1)
                 config[lineIndex] = String.Format(@"{0} ""{1}""", key, value);  
+            else
+                config.Add(String.Format(@"{0} ""{1}""", key, value));
         }
     }
 

@@ -1,0 +1,15 @@
+﻿baseq3,13dream.pk3
+baseq3,actf08-10.pk3
+baseq3,atlantis.pk3
+baseq3,ctctf.pk3
+baseq3,hydrogen.pk3
+baseq3,mapel4.pk3
+baseq3,pctf1.pk3
+baseq3,q3bring.pk3
+baseq3,q3wpak1.pk3
+baseq3,q3wpak2.pk3
+baseq3,q3wpak3.pk3
+baseq3,q3wpak4.pk3
+baseq3,quartzctf1.pk3
+baseq3,rota3ctf1.pk3
+baseq3,X3map_v1_final.pk3
